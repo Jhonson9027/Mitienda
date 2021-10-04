@@ -27,21 +27,522 @@ public class Inventario extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jPanel1 = new javax.swing.JPanel();
+        Register = new javax.swing.JLabel();
+        Complete = new javax.swing.JLabel();
+        IdPro = new javax.swing.JLabel();
+        Descripcion = new javax.swing.JLabel();
+        PrecioJ = new javax.swing.JLabel();
+        JIVA = new javax.swing.JLabel();
+        jNotas = new javax.swing.JLabel();
+        btnCancelar = new javax.swing.JButton();
+        btnPrimero = new javax.swing.JButton();
+        btnNuevo = new javax.swing.JButton();
+        btnModificar = new javax.swing.JButton();
+        btnUltimo = new javax.swing.JButton();
+        btnGuardar = new javax.swing.JButton();
+        btnBorrar = new javax.swing.JButton();
+        btnBuscar = new javax.swing.JButton();
+        btnAnterior = new javax.swing.JButton();
+        btnSiguiente = new javax.swing.JButton();
+        NuevoRegistro = new javax.swing.JLabel();
+        Modificar = new javax.swing.JLabel();
+        Borrar = new javax.swing.JLabel();
+        Guardar = new javax.swing.JLabel();
+        Buscar = new javax.swing.JLabel();
+        Cancelar = new javax.swing.JLabel();
+        jLibro = new javax.swing.JLabel();
+        jTextField1 = new javax.swing.JTextField();
+        jTextField2 = new javax.swing.JTextField();
+        jTextField3 = new javax.swing.JTextField();
+        jTextField4 = new javax.swing.JTextField();
+        jComboBox1 = new javax.swing.JComboBox<>();
+        jScrollPane2 = new javax.swing.JScrollPane();
+        jTable1 = new javax.swing.JTable();
+        jTextField5 = new javax.swing.JTextField();
+        PrecioJ1 = new javax.swing.JLabel();
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+
+        jPanel1.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel1.setForeground(new java.awt.Color(255, 255, 255));
+        jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        Register.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
+        Register.setForeground(new java.awt.Color(0, 0, 0));
+        Register.setText("Inventario");
+        jPanel1.add(Register, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 40, -1, -1));
+
+        Complete.setForeground(new java.awt.Color(134, 146, 166));
+        Complete.setText("Complete los campos a continuacion.");
+        jPanel1.add(Complete, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 80, -1, -1));
+
+        IdPro.setForeground(new java.awt.Color(134, 146, 166));
+        IdPro.setText("ID Producto *");
+        jPanel1.add(IdPro, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 110, -1, -1));
+
+        Descripcion.setForeground(new java.awt.Color(134, 146, 166));
+        Descripcion.setText("Descripción *");
+        jPanel1.add(Descripcion, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 110, -1, -1));
+
+        PrecioJ.setForeground(new java.awt.Color(134, 146, 166));
+        PrecioJ.setText("Precio Compra *");
+        jPanel1.add(PrecioJ, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 200, -1, -1));
+
+        JIVA.setForeground(new java.awt.Color(134, 146, 166));
+        JIVA.setText("IVA *");
+        jPanel1.add(JIVA, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 200, -1, -1));
+
+        jNotas.setForeground(new java.awt.Color(134, 146, 166));
+        jNotas.setText("Cantidad *");
+        jPanel1.add(jNotas, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 110, -1, -1));
+
+        btnCancelar.setBorder(null);
+        btnCancelar.setBorderPainted(false);
+        btnCancelar.setContentAreaFilled(false);
+        btnCancelar.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnCancelar.setEnabled(false);
+        btnCancelar.setFocusPainted(false);
+        btnCancelar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnCancelarActionPerformed(evt);
+            }
+        });
+        jPanel1.add(btnCancelar, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 590, 60, 60));
+
+        btnPrimero.setBorder(null);
+        btnPrimero.setBorderPainted(false);
+        btnPrimero.setContentAreaFilled(false);
+        btnPrimero.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnPrimero.setFocusPainted(false);
+        btnPrimero.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnPrimeroActionPerformed(evt);
+            }
+        });
+        jPanel1.add(btnPrimero, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 500, -1, 50));
+
+        btnNuevo.setBorder(null);
+        btnNuevo.setBorderPainted(false);
+        btnNuevo.setContentAreaFilled(false);
+        btnNuevo.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnNuevo.setFocusPainted(false);
+        btnNuevo.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnNuevoActionPerformed(evt);
+            }
+        });
+        jPanel1.add(btnNuevo, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 490, 100, 70));
+
+        btnModificar.setBorder(null);
+        btnModificar.setBorderPainted(false);
+        btnModificar.setContentAreaFilled(false);
+        btnModificar.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnModificar.setFocusPainted(false);
+        btnModificar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnModificarActionPerformed(evt);
+            }
+        });
+        jPanel1.add(btnModificar, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 500, 110, 50));
+
+        btnUltimo.setBorder(null);
+        btnUltimo.setBorderPainted(false);
+        btnUltimo.setContentAreaFilled(false);
+        btnUltimo.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnUltimo.setFocusPainted(false);
+        btnUltimo.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnUltimoActionPerformed(evt);
+            }
+        });
+        jPanel1.add(btnUltimo, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 500, 90, 50));
+
+        btnGuardar.setBorder(null);
+        btnGuardar.setBorderPainted(false);
+        btnGuardar.setContentAreaFilled(false);
+        btnGuardar.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnGuardar.setEnabled(false);
+        btnGuardar.setFocusPainted(false);
+        btnGuardar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnGuardarActionPerformed(evt);
+            }
+        });
+        jPanel1.add(btnGuardar, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 590, 90, 60));
+
+        btnBorrar.setBorder(null);
+        btnBorrar.setBorderPainted(false);
+        btnBorrar.setContentAreaFilled(false);
+        btnBorrar.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnBorrar.setFocusPainted(false);
+        btnBorrar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnBorrarActionPerformed(evt);
+            }
+        });
+        jPanel1.add(btnBorrar, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 500, 90, 60));
+
+        btnBuscar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Iconos/lupa.png"))); // NOI18N
+        btnBuscar.setBorder(null);
+        btnBuscar.setBorderPainted(false);
+        btnBuscar.setContentAreaFilled(false);
+        btnBuscar.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnBuscar.setFocusPainted(false);
+        btnBuscar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnBuscarActionPerformed(evt);
+            }
+        });
+        jPanel1.add(btnBuscar, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 490, 100, 60));
+
+        btnAnterior.setBorder(null);
+        btnAnterior.setBorderPainted(false);
+        btnAnterior.setContentAreaFilled(false);
+        btnAnterior.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnAnterior.setFocusPainted(false);
+        btnAnterior.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnAnteriorActionPerformed(evt);
+            }
+        });
+        jPanel1.add(btnAnterior, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 630, 40, 50));
+
+        btnSiguiente.setBorder(null);
+        btnSiguiente.setBorderPainted(false);
+        btnSiguiente.setContentAreaFilled(false);
+        btnSiguiente.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnSiguiente.setFocusPainted(false);
+        btnSiguiente.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnSiguienteActionPerformed(evt);
+            }
+        });
+        jPanel1.add(btnSiguiente, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 630, 50, 50));
+
+        NuevoRegistro.setForeground(new java.awt.Color(134, 146, 166));
+        NuevoRegistro.setText("Nuevo Registro");
+        jPanel1.add(NuevoRegistro, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 560, 100, -1));
+
+        Modificar.setForeground(new java.awt.Color(134, 146, 166));
+        Modificar.setText("Modificar");
+        jPanel1.add(Modificar, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 560, 70, -1));
+
+        Borrar.setForeground(new java.awt.Color(134, 146, 166));
+        Borrar.setText("Borrar contenido");
+        jPanel1.add(Borrar, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 560, 100, -1));
+
+        Guardar.setForeground(new java.awt.Color(134, 146, 166));
+        Guardar.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        Guardar.setText("Guardar");
+        jPanel1.add(Guardar, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 650, 100, -1));
+
+        Buscar.setForeground(new java.awt.Color(134, 146, 166));
+        Buscar.setText("Buscar");
+        jPanel1.add(Buscar, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 560, 60, -1));
+
+        Cancelar.setForeground(new java.awt.Color(134, 146, 166));
+        Cancelar.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        Cancelar.setText("Cancelar");
+        jPanel1.add(Cancelar, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 650, 60, -1));
+        jPanel1.add(jLibro, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 200, -1, -1));
+
+        jTextField1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        jPanel1.add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 140, 200, 40));
+
+        jTextField2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        jPanel1.add(jTextField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 140, 200, 40));
+
+        jTextField3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        jPanel1.add(jTextField3, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 140, 200, 40));
+
+        jTextField4.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        jPanel1.add(jTextField4, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 230, 200, 40));
+
+        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Aceites", "Aseo" }));
+        jPanel1.add(jComboBox1, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 230, 200, 40));
+
+        jTable1.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null}
+            },
+            new String [] {
+                "Title 1", "Title 2", "Title 3", "Title 4"
+            }
+        ));
+        jScrollPane2.setViewportView(jTable1);
+
+        jPanel1.add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 320, 620, 150));
+
+        jTextField5.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        jPanel1.add(jTextField5, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 230, 200, 40));
+
+        PrecioJ1.setForeground(new java.awt.Color(134, 146, 166));
+        PrecioJ1.setText("Precio Venta *");
+        jPanel1.add(PrecioJ1, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 200, -1, -1));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+            .addGap(0, 780, Short.MAX_VALUE)
+            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(layout.createSequentialGroup()
+                    .addGap(0, 0, Short.MAX_VALUE)
+                    .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 780, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGap(0, 0, Short.MAX_VALUE)))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
+            .addGap(0, 700, Short.MAX_VALUE)
+            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(layout.createSequentialGroup()
+                    .addGap(0, 0, Short.MAX_VALUE)
+                    .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 700, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGap(0, 0, Short.MAX_VALUE)))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void btnCancelarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCancelarActionPerformed
+
+        // Deshabilita los botones
+        btnPrimero.setEnabled(true);
+        btnAnterior.setEnabled(true);
+        btnSiguiente.setEnabled(true);
+        btnUltimo.setEnabled(true);
+        btnNuevo.setEnabled(true);
+        btnModificar.setEnabled(true);
+        btnBorrar.setEnabled(true);
+        btnBuscar.setEnabled(true);
+        btnGuardar.setEnabled(false);
+        btnCancelar.setEnabled(false);
+
+        // Deshabilita los campos
+        txtIDProducto.setEnabled(false);
+        txtDescripcion.setEnabled(false);
+        txtPrecio.setEnabled(false);
+        txtNota.setEnabled(false);
+        cmbIVA.setEnabled(false);
+    }//GEN-LAST:event_btnCancelarActionPerformed
+
+    private void btnPrimeroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPrimeroActionPerformed
+        proAct = 0;
+        mostrarRegistro();
+    }//GEN-LAST:event_btnPrimeroActionPerformed
+
+    private void btnNuevoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnNuevoActionPerformed
+        //
+        // Habilita los botones
+        btnPrimero.setEnabled(false);
+        btnAnterior.setEnabled(false);
+        btnSiguiente.setEnabled(false);
+        btnUltimo.setEnabled(false);
+        btnNuevo.setEnabled(false);
+        btnModificar.setEnabled(false);
+        btnBorrar.setEnabled(false);
+        btnBuscar.setEnabled(false);
+        btnGuardar.setEnabled(true);
+        btnCancelar.setEnabled(true);
+
+        // Habilita los campos
+        txtIDProducto.setEnabled(true);
+        txtNota.setEnabled(true);
+        txtPrecio.setEnabled(true);
+        txtDescripcion.setEnabled(true);
+        cmbIVA.setEnabled(true);
+
+        // Limpiar campos
+        txtIDProducto.setText("");
+        txtNota.setText("");
+        txtPrecio.setText("");
+        txtDescripcion.setText("");
+        txtIDProducto.setText("");
+        cmbIVA.setSelectedIndex(0);
+
+        // Activamos el flag de registro nuevo
+        nuevo = true;
+
+        // Damos foco al campo ID
+        txtIDProducto.requestFocusInWindow();
+
+    }//GEN-LAST:event_btnNuevoActionPerformed
+
+    private void btnModificarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnModificarActionPerformed
+
+        // Habilita los botones
+        btnPrimero.setEnabled(false);
+        btnAnterior.setEnabled(false);
+        btnSiguiente.setEnabled(false);
+        btnUltimo.setEnabled(false);
+        btnNuevo.setEnabled(false);
+        btnModificar.setEnabled(false);
+        btnBorrar.setEnabled(false);
+        btnBuscar.setEnabled(false);
+        btnGuardar.setEnabled(true);
+        btnCancelar.setEnabled(true);
+
+        // Habilita los campos
+        txtDescripcion.setEnabled(true);
+        txtPrecio.setEnabled(true);
+        txtNota.setEnabled(true);
+        cmbIVA.setEnabled(true);
+
+        // Desactivamos el flag de registro nuevo
+        nuevo = false;
+
+        // Damos foco al campo ID
+        txtDescripcion.requestFocusInWindow();
+    }//GEN-LAST:event_btnModificarActionPerformed
+
+    private void btnUltimoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnUltimoActionPerformed
+        proAct = misDatos.numeroProductos() - 1;
+        mostrarRegistro();
+    }//GEN-LAST:event_btnUltimoActionPerformed
+
+    private void btnGuardarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGuardarActionPerformed
+
+        // Validaciones
+        if (txtIDProducto.getText().equals("")) {
+            JOptionPane.showMessageDialog(rootPane, "Debe digitar un ID");
+            txtIDProducto.requestFocusInWindow();
+            return;
+        }
+
+        if (txtDescripcion.getText().equals("")) {
+            JOptionPane.showMessageDialog(rootPane, "Debe seleccionar una descripción");
+            txtDescripcion.requestFocusInWindow();
+            return;
+        }
+
+        if (txtPrecio.getText().equals("")) {
+            JOptionPane.showMessageDialog(rootPane, "Debe seleccionar un precio");
+            txtPrecio.requestFocusInWindow();
+            return;
+        }
+
+        if (!Utilidades.isNumeric(txtPrecio.getText())) {
+            JOptionPane.showMessageDialog(rootPane, "Debe seleccionar un valor numerico");
+            txtPrecio.requestFocusInWindow();
+            return;
+        }
+
+        int precio = Integer.parseInt(txtPrecio.getText());
+
+        if (precio <= 0) {
+            JOptionPane.showMessageDialog(rootPane, "Debe seleccionar un mayor que 0");
+            txtPrecio.requestFocusInWindow();
+            return;
+        }
+
+        // Si es nuevo validamos qu el usuario no exista
+        int pos = misDatos.posicionProducto(txtIDProducto.getText());
+        if (nuevo) {
+            if (pos != -1) {
+                JOptionPane.showMessageDialog(rootPane, "Producto ya existente");
+                txtIDProducto.requestFocusInWindow();
+                return;
+            }
+        } else {
+
+            if (pos == -1) {
+                JOptionPane.showMessageDialog(rootPane, "Producto no existe");
+                txtIDProducto.requestFocusInWindow();
+                return;
+            }
+
+        }
+
+        // Creamos el objeto producto y lo agregamos a datos
+        Producto miProducto = new Producto(
+            txtIDProducto.getText(),
+            txtDescripcion.getText(),
+            precio,
+            cmbIVA.getSelectedIndex(),
+            txtNota.getText());
+
+        String msg;
+        if (nuevo) {
+            msg = misDatos.agregarProducto(miProducto);
+        } else {
+            msg = misDatos.modificarProducto(miProducto, pos);
+        }
+
+        JOptionPane.showMessageDialog(rootPane, msg);
+
+        // Deshabilita los botones
+        btnPrimero.setEnabled(true);
+        btnAnterior.setEnabled(true);
+        btnSiguiente.setEnabled(true);
+        btnUltimo.setEnabled(true);
+        btnNuevo.setEnabled(true);
+        btnModificar.setEnabled(true);
+        btnBorrar.setEnabled(true);
+        btnBuscar.setEnabled(true);
+        btnGuardar.setEnabled(false);
+        btnCancelar.setEnabled(false);
+
+        // Deshabilita los campos
+        txtIDProducto.setEnabled(false);
+        txtDescripcion.setEnabled(false);
+        txtPrecio.setEnabled(false);
+        txtNota.setEnabled(false);
+        cmbIVA.setEnabled(false);
+
+        //Actualizar cambios en tabla
+        llenarTabla();
+    }//GEN-LAST:event_btnGuardarActionPerformed
+
+    private void btnBorrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBorrarActionPerformed
+
+        int rta = JOptionPane.showConfirmDialog(rootPane, "¿Esta seguro de borrar el registro?");
+        if (rta != 0) {
+            return;
+        }
+        String msg;
+        msg = misDatos.borrarProducto(proAct);
+        JOptionPane.showMessageDialog(rootPane, msg);
+        proAct = 0;
+        mostrarRegistro();
+
+        //Actualizar cambios en tabla
+        llenarTabla();
+    }//GEN-LAST:event_btnBorrarActionPerformed
+
+    private void btnBuscarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBuscarActionPerformed
+        String producto = JOptionPane.showInputDialog("Ingrese codigo de producto");
+        if (producto.equals("")) {
+            return;
+        }
+        int pos = misDatos.posicionProducto(producto);
+        if (pos == -1) {
+            JOptionPane.showMessageDialog(rootPane, "Producto no existente");
+            return;
+        }
+        proAct = pos;
+        mostrarRegistro();
+    }//GEN-LAST:event_btnBuscarActionPerformed
+
+    private void btnAnteriorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAnteriorActionPerformed
+        proAct--;
+        if (proAct == -1) {
+            proAct = misDatos.numeroProductos() - 1;
+        }
+
+        mostrarRegistro();
+    }//GEN-LAST:event_btnAnteriorActionPerformed
+
+    private void btnSiguienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSiguienteActionPerformed
+        proAct++;
+        if (proAct == misDatos.numeroProductos()) {
+            proAct = 0;
+        }
+        mostrarRegistro();
+    }//GEN-LAST:event_btnSiguienteActionPerformed
 
     /**
      * @param args the command line arguments
@@ -79,5 +580,39 @@ public class Inventario extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel Borrar;
+    private javax.swing.JLabel Buscar;
+    private javax.swing.JLabel Cancelar;
+    private javax.swing.JLabel Complete;
+    private javax.swing.JLabel Descripcion;
+    private javax.swing.JLabel Guardar;
+    private javax.swing.JLabel IdPro;
+    private javax.swing.JLabel JIVA;
+    private javax.swing.JLabel Modificar;
+    private javax.swing.JLabel NuevoRegistro;
+    private javax.swing.JLabel PrecioJ;
+    private javax.swing.JLabel PrecioJ1;
+    private javax.swing.JLabel Register;
+    private javax.swing.JButton btnAnterior;
+    private javax.swing.JButton btnBorrar;
+    private javax.swing.JButton btnBuscar;
+    private javax.swing.JButton btnCancelar;
+    private javax.swing.JButton btnGuardar;
+    private javax.swing.JButton btnModificar;
+    private javax.swing.JButton btnNuevo;
+    private javax.swing.JButton btnPrimero;
+    private javax.swing.JButton btnSiguiente;
+    private javax.swing.JButton btnUltimo;
+    private javax.swing.JComboBox<String> jComboBox1;
+    private javax.swing.JLabel jLibro;
+    private javax.swing.JLabel jNotas;
+    private javax.swing.JPanel jPanel1;
+    private javax.swing.JScrollPane jScrollPane2;
+    private javax.swing.JTable jTable1;
+    private javax.swing.JTextField jTextField1;
+    private javax.swing.JTextField jTextField2;
+    private javax.swing.JTextField jTextField3;
+    private javax.swing.JTextField jTextField4;
+    private javax.swing.JTextField jTextField5;
     // End of variables declaration//GEN-END:variables
 }
